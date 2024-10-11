@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>カラフルボタンとカラーピッカー</title>
+    <link rel="stylesheet" href="color.css">
+</head>
+<body>
+    <h1>色を選ぶか、ボタンで色を変える！</h1>
+    <h2>このサイトはgoogleのカラーピッカーのように自分で色を指定して、16進数カラーコードを見つけてくれます</h2>
+
+    <div class="color-picker">
+        <label for="hexColor">16進数カラーコード:</label>
+        <input type="text" id="hexColor" placeholder="#ffffff" maxlength="7">
+        <button id="applyColor">色を適用</button>
+    </div>
+
+    <button id="randomColorButton">ランダムな色に切り替え</button>
+
+    <!-- 選択された16進数のカラーコードを表示し、コピーするエリア -->
+    <div id="colorCodeDisplay">
+        現在のカラーコード: <span id="colorCode">#f0f0f0</span>
+        <button id="copyColorCode">コピー</button>
+    </div>
+
+    <!-- RGB入力フィールド -->
+    <div class="rgb-picker">
+        <h2>RGB値を入力して色を変更</h2>
+        <label for="red">赤 (0-255):</label>
+        <input type="number" id="red" value="240" min="0" max="255"><br>
+        <label for="green">緑 (0-255):</label>
+        <input type="number" id="green" value="240" min="0" max="255"><br>
+        <label for="blue">青 (0-255):</label>
+        <input type="number" id="blue" value="240" min="0" max="255"><br>
+        <button id="applyRGB">RGBで色を適用</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
