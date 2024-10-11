@@ -50,8 +50,11 @@
     <script>
      const button1=document.querySelector("#button1").addEventListener("click",function(){
      window.location.href="https://mysite-made.f5.si/color.html";
-         const button2=document.querySelector("#button2").addEventListener("click",function(){
-         window.location.href="https://mysite-made.f5.si/password.html";
+         const button2 = document.querySelector("#button2").addEventListener("click", function() {
+    console.log("Button clicked"); // ボタンが押されたことを確認
+    window.location.href = "https://mysite-made.f5.si/password.html";
+});
+
          })
      })
     </script>
