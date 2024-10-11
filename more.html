@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ゲームサイト</title>
+    <link rel="stylesheet" href="more.css">
+</head>
+<body>
+    <header>
+        <h1>最弱が作ったサイト</h1>
+        <nav>
+            <ul>
+                <li><a href="#">ホーム</a></li>
+                <li><a href="#">もっと見る</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="sidebar" class="sidebar">
+        <a href="https://mysite.f5.si/">ホーム</a>
+        <a href="https://blog-mysite.f5.si" class="href1">ブログ</a>
+        <a href="#" class="href3">このサイトについて</a>
+    </div>
+
+    <main>
+        <section class="game-list">
+            <h2>サイトを一覧</h2>
+            <div class="game">
+                <h3>おみくじ</h3>
+                <p>あなたの運はどれくらい？？さあ試してみよう！</p>
+                <button id="button0">見てみる</button>
+            </div>
+            <div class="game">
+                <h3>カラー選択</h3>
+                <p>自分でカラーを選択して、カラーコードなどを教えてくれます</p>
+                <button id="button1">見てみる</button>
+            </div>
+            <div class="game">
+                <h3>パスワード生成サイト</h3>
+                <p>自分の決め次第でより強力なパスワードを作ってくれます。</p>
+                <button id="button2">見てみる</button>
+            </div>
+        </section>
+    </main>
+  <main>
+        <section class="game-list">
+            <div class="game">
+                <h3>???</h3>
+                <p>何が出るんだろう？</p>
+                <button id="button3">?</button>
+            </div>
+        <div class="game">
+                <h3>???</h3>
+                <p>何が出るんだろう？</p>
+                <button id="button4">???</button>
+            </div>
+           <div class="game">
+                <h3>???</h3>
+                <p>何が出るんだろう？</p>
+                <button id="button5">???</button>
+              <div class="game">
+                <h3>???</h3>
+                <p>何が出るんだろう?</p>
+                <button id="button6">???</button>
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer class="custom-footer">
+        <p>© 2024 最弱のサイト. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const button1 = document.querySelector("#button1").addEventListener("click", function() {
+            console.log("Button 1 clicked");
+            window.location.href = "https://mysite-made.f5.si/color"; // 修正済み
+        });
+
+        const button2 = document.querySelector("#button2").addEventListener("click", function() {
+            console.log("Button 2 clicked");
+            window.location.href = "https://mysite-made.f5.si/password";
+        });
+        
+        const button0 = document.querySelector("#button0").addEventListener("click", function() {
+            console.log("Button 0 clicked");
+            window.location.href = "https://mysite-made.f5.si/おみくじ"; // 修正済み
+        });
+    </script>
+</body>
+</html>
