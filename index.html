@@ -16,7 +16,6 @@
             </ul>
         </nav>
     </header>
-    <!-- サイドバー -->
     <div id="sidebar" class="sidebar">
         <a href="https://mysite.f5.si/">ホーム</a>
         <a href="https://blog-mysite.f5.si" class="href1">ブログ</a>
@@ -49,20 +48,19 @@
     </footer>
 
     <script>
-        // button1 のクリックイベント
         const button1 = document.querySelector("#button1").addEventListener("click", function() {
-            window.location.href = "https://mysite-made.f5.si/color;
+            console.log("Button 1 clicked");
+            window.location.href = "https://mysite-made.f5.si/color"; // 修正済み
         });
 
-        // button2 のクリックイベント
         const button2 = document.querySelector("#button2").addEventListener("click", function() {
-            console.log("Button clicked"); // ボタンが押されたことを確認
+            console.log("Button 2 clicked");
             window.location.href = "https://mysite-made.f5.si/password";
         });
         
-        //button0のクリックイベント
-        const button0　=document.querySelector("#button0").addEventListener("click",function() {
-           window.location.href = "https://mysite-made.f5.si/おみくじ" ;
+        const button0 = document.querySelector("#button0").addEventListener("click", function() {
+            console.log("Button 0 clicked");
+            window.location.href = "https://mysite-made.f5.si/おみくじ"; // 修正済み
         });
     </script>
 </body>
