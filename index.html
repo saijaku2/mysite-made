@@ -11,8 +11,8 @@
         <h1>最弱が作ったサイト</h1>
         <nav>
             <ul>
-                <li><a href="#">サイト一覧</a></li>
-                <li><a href="#">New サイト</a></li>
+                <li><a href="#">ホーム</a></li>
+                <li><a href="#">もっと見る</a></li>
             </ul>
         </nav>
     </header>
@@ -27,9 +27,9 @@
         <section class="game-list">
             <h2>サイトを一覧</h2>
             <div class="game">
-                <h3>???</h3>
-                <p>何が出るんだ？</p>
-                <button>???</button>
+                <h3>おみくじ</h3>
+                <p>あなたの運はどれくらい？？さあ試してみよう！</p>
+                <button id="button0">見てみる</button>
             </div>
             <div class="game">
                 <h3>カラー選択</h3>
@@ -51,13 +51,17 @@
     <script>
         // button1 のクリックイベント
         const button1 = document.querySelector("#button1").addEventListener("click", function() {
-            window.location.href = "https://mysite-made.f5.si/color.html";
+            window.location.href = "https://mysite-made.f5.si/color;
         });
 
         // button2 のクリックイベント
         const button2 = document.querySelector("#button2").addEventListener("click", function() {
             console.log("Button clicked"); // ボタンが押されたことを確認
-            window.location.href = "https://mysite-made.f5.si/password.html";
+            window.location.href = "https://mysite-made.f5.si/password";
+        });
+        //button0のクリックイベント
+        const button0=document.querySelector("#button0").addEventListener("click",function(){
+           window.location.href="https://mysite-made.f5.si/おみくじ" 
         });
     </script>
 </body>
