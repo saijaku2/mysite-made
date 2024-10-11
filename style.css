@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #2f3030;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* 中央揃え */
+    gap: 20px; /* 項目間の間隔 */
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.game-list {
+    display: flex;
+    flex-direction:column; /* 縦並び */
+    align-items: center; /* 中央揃え */
+}
+
+.game {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 15px;
+    width: 300px; /* ゲームカードの幅 */
+    text-align: center; /* テキストを中央揃え */
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border:none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* ホバー時の色 */
+}
+
+.custom-footer {
+    border-top: 2px solid #333;
+    padding: 10px;
+    text-align: center;
+    background-color: #2f3030;
+    color: #fff;
+}
