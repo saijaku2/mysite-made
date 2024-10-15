@@ -45,8 +45,8 @@
         <section class="game-list">
             <div class="game">
                 <h3>???</h3>
-                <p>何が出るんだろう？</p>
-                <button id="button3">???</button>
+                <p>シンプルな電卓です。算術演算しかできません。現在三角関数などを開発する予定です。</p>
+                <button id="button3">見てみる</button>
             </div>
         <div class="game">
                 <h3>???</h3>
@@ -84,6 +84,11 @@
         const button0 = document.querySelector("#button0").addEventListener("click", function() {
             console.log("Button 0 clicked");
             window.location.href = "https://mysite-made.f5.si/おみくじ"; // 修正済み
+        });
+
+        const button3 = document.querySelector("#button3").addEventListener("click", function() {
+            console.log("Button 3 clicked");
+            window.location.href = "https://mysite-made.f5.si/calculator"; // 修正済み
         });
     </script>
 </body>
